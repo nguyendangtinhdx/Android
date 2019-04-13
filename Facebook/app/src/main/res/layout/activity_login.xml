@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="#3cb5d9"
+    tools:context="com.example.nguyendangtinh.facebook.Login">
+
+    <ImageView
+        android:src="@drawable/facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        style="@style/text"
+        android:id="@+id/txtUsername"
+        android:drawableLeft="@drawable/username"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        style="@style/text"
+        android:inputType="textPassword"
+        android:id="@+id/txtPassword"
+        android:drawableLeft="@drawable/password"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/cbShowPassword"
+        style="@style/checkbox"
+        android:text="Show Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="Login"
+        style="@style/button"
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        style="@style/button"
+        android:id="@+id/btnSetting"
+        android:text="Setiing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        style="@style/button"
+        android:id="@+id/btnShareFacebook"
+        android:text="Share Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

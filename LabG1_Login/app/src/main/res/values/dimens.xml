@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dim_root">15dp</dimen>
+    <dimen name="dim_border">35dp</dimen>
+    <dimen name="dim_element">5dp</dimen>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#12acda"
+    android:padding="@dimen/dim_root"
+    tools:context="com.example.nguyendangtinh.login.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtUserName"
+        style="@style/txt"
+
+
+        android:hint="UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtPassWord"
+        style="@style/txt"
+
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:onClick="Login"
+        style="@style/btn"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnSetting"
+        android:onClick="Setting"
+        style="@style/btn"
+        android:text="Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnShare"
+        android:onClick=""
+        style="@style/btn"
+        android:text="Share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

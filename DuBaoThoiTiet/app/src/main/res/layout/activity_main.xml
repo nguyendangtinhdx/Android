@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/bg"
+    android:background="@drawable/background"
+    tools:context="com.example.nguyendangtinh.dubaothoitiet.MainActivity">
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:textColor="#01f7da"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textSize="40dp"
+        android:text="Dự báo thời tiết"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        style="@style/txt"
+        android:textColorHint="#fff"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/edittextSearch"
+        android:hint="Nhập tên thành phố, quốc gia"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:textStyle="bold"
+        style="@style/txt"
+        android:textSize="20dp"
+        android:background="#13ae35"
+        android:layout_marginLeft="10dp"
+        android:text="Tìm"
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <TextView
+        style="@style/txt"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="25dp"
+        android:text="Tên thành phố"
+        android:id="@+id/textviewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        style="@style/txt"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textSize="25dp"
+        android:text="Tên quốc gia"
+        android:id="@+id/textviewCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@drawable/weather"
+        android:id="@+id/imageIcon"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <TextView
+        android:textColor="#f20"
+        android:layout_gravity="center"
+        android:textSize="35dp"
+        android:text="Nhiệt độ"
+        android:id="@+id/textviewTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#f20"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:textSize="30dp"
+        android:text="Trạng thái"
+        android:id="@+id/textviewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                style="@style/txt"
+                android:textSize="20dp"
+                android:text="Độ ẩm"
+                android:id="@+id/textviewHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/cloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                style="@style/txt"
+                android:textSize="20dp"
+                android:text="Mây"
+                android:id="@+id/textviewCloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/mill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                style="@style/txt"
+                android:textSize="20dp"
+                android:text="Gió"
+                android:id="@+id/textviewWind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#e8f900"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Ngày cập nhật"
+        android:id="@+id/textviewDay"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonChangeActivity"
+        style="@style/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#13ae35"
+        android:text="7 ngày tiếp theo"
+        android:textSize="25dp" />
+</LinearLayout>

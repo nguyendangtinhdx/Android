@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dim_root"
+    android:background="#12acda"
+    tools:context="com.example.server_lab4.labg1.LoginActivity">
+    <ImageView
+        android:tint="@android:color/white"
+        android:src="@drawable/icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtUserName"
+        style="@style/txt"
+        android:drawableTint="@android:color/white"
+        android:drawableLeft="@drawable/iconuser"
+        android:hint="UserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtPassword"
+        style="@style/txt"
+        android:drawableTint="#ffffff"
+        android:drawableLeft="@drawable/iconlock"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="Login"
+        style="@style/btn"
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        style="@style/btn"
+        android:text="Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        style="@style/btn"
+        android:text="Share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

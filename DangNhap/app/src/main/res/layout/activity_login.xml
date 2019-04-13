@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#12acda"
+    android:padding="20dp"
+    tools:context="com.example.nguyendangtinh.dangnhap.LoginActivity">
+
+    <ImageView
+        android:src="@drawable/icon_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/txtUsername"
+        style="@style/txt"
+        android:drawableLeft="@drawable/icon_username"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/txtPassword"
+        android:inputType="textPassword"
+        style="@style/txt"
+        android:drawableLeft="@drawable/icon_password"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/showPassword"
+        android:text="Show Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="Login"
+        android:textSize="30dp"
+        style="@style/btn"
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <Button
+        android:textSize="30dp"
+        style="@style/btn"
+        android:id="@+id/btnSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Setting" />
+
+    <Button
+        android:textSize="30dp"
+        style="@style/btn"
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share" />
+
+</LinearLayout>
